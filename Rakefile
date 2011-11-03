@@ -4,18 +4,9 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   dot_files   = File.dirname(__FILE__)
-  files       = %w(shells/zsh/zshrc
-                   shells/zsh/zshenv
-                   shells/bash/bashrc
+  files       = %w(shells/bash/bashrc
                    shells/bash/bash_profile
-                   misc/ackrc
                    misc/inputrc
-                   misc/nanorc
-                   misc/ctags
-                   languages/ruby/autotest/autotest
-                   languages/ruby/gemrc
-                   languages/ruby/irbrc
-                   languages/ruby/rdebugrc
                    vcs/git/gitk
                    vcs/git/gitconfig
                    vcs/git/gitignore
@@ -26,7 +17,6 @@ task :install do
                    editors/vim/vimrc)
 
   files = Hash[files.zip(Array.new(files.size, "~/."))]
-  # files["ruby/global.gems"] = "~/.rvm/gemsets/"
 
   files.each do |file, destination|
     file_name        = file.split(/\//).last
