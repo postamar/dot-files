@@ -14,8 +14,9 @@ au! BufRead,BufNewFile gitconfig set ft=gitconfig
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
-" Close vim if NERDTree is the only buffer left
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+" Tagbar on startupt
+autocmd VimEnter * TagbarOpen
+
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
@@ -28,3 +29,6 @@ function! s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
+
+" Close vim if NERDTree is the only buffer left
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()

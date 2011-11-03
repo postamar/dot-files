@@ -1,28 +1,23 @@
 set nocompatible
 
 source ~/.vim/ui.vim
+source ~/.vim/goodies.vim
 source ~/.vim/autocommands.vim
 source ~/.vim/bundles.vim
-
-" For when you forget to sudo.. Really Write the file.
-cmap w!! w !sudo tee % >/dev/null
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 set tags=tmp/tags;/,./tmp/tags;/,tags;/,./tags;/
 
-" Theme development help
-cmap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+" NERDTree and Tagbar toogle
+nmap <leader>n :call ToggleNERDTreeAndTagbar()<CR>
 
-" Quick editing of common dot-files
-map <Leader>vv :edit $MYVIMRC<CR>
-map <Leader>gg :edit $MYGVIMRC<CR>
-map <Leader>.. :cd ~/.config<CR>:enew<CR>
+" Don't close NERDTree when opening a file
+let NERDTreeQuitOnOpen=0
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
+" Great colors
 set t_Co=256

@@ -35,6 +35,11 @@ call vundle#rc()
   " Tagbar
   Bundle "majutsushi/tagbar"
 
+  " camelcasemotion
+  Bundle "camelcasemotion"
+
+  Bundle "SuperTab"
+
   Bundle "kien/rainbow_parentheses.vim"
   autocmd VimEnter * RainbowParenthesesToggle
   autocmd Syntax * RainbowParenthesesLoadRound
