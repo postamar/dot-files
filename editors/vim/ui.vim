@@ -8,7 +8,7 @@ syntax on
   set linespace=2
   set cursorline
   set background=dark
-  colorscheme desert
+  colorscheme lucius
 
 " Tabs/Whitespace
   set tabstop=4
