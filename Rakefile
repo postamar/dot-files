@@ -4,14 +4,10 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   dot_files   = File.dirname(__FILE__)
-  files       = %w(shells/bash/bashrc
-                   shells/bash/bash_profile
-                   misc/inputrc
-                   vcs/git/gitk
+  files       = %w(vcs/git/gitk
                    vcs/git/gitconfig
                    vcs/git/gitignore
                    vcs/git/gitattributes
-                   vcs/hg/hgrc
                    editors/vim
                    editors/vim/gvimrc
                    editors/vim/vimrc)
