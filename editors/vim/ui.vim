@@ -8,17 +8,18 @@ syntax on
   set linespace=2
   set cursorline
   set background=dark
-  colorscheme Tomorrow-Night
+  colorscheme desert
 
 " Tabs/Whitespace
-  set tabstop=2
-  set shiftwidth=2
+  set tabstop=4
+  set shiftwidth=4
+  set softtabstop=4
   set autoindent
   set smarttab
   set expandtab
-  set nowrap
+  set wrap
   set list
-  set listchars=tab:▸\ ,eol:¬,trail:·
+  set listchars=tab:▸\ ,nbsp:¬,trail:·
   set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 " Misc
@@ -44,7 +45,7 @@ syntax on
 
 " Tab completion
   set wildmode=list:longest,list:full
-  set wildignore+=*.o,*.obj,.git,*.rbc,*.swp
+  set wildignore+=*.o,*.obj,.git,*.pyc,*.swp
 
 " Status bar
   set laststatus=2
@@ -78,11 +79,6 @@ syntax on
   set splitright
   map <C-_> :split<CR>
   map <C-\> :vsplit<CR>
-
-" Emacs-like keys for the command line
-  cnoremap <C-A> <Home>
-  cnoremap <C-E> <End>
-  cnoremap <C-K> <C-U>
 
 " Move around in insert mode
   inoremap <C-h> <left>

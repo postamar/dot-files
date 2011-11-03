@@ -11,26 +11,8 @@ call vundle#rc()
   let g:HammerQuiet = 1
 
 " Languages/Syntaxes/Frameworks {{{
-  " Ruby {{{
-  Bundle 'vim-ruby/vim-ruby'
-  Bundle 'tpope/vim-endwise'
-  Bundle 'tpope/vim-rake'
-  Bundle 'tpope/vim-rails'
-  Bundle 'tpope/vim-haml'
-
-  " temporarily disable due to speed issues
-  "   see: https://github.com/tpope/vim-bundler/issues/4
-  " Bundle 'tpope/vim-bundler'
-  " }}}
-
-  " Markdown/Textile/etc {{{
-  Bundle 'tpope/vim-markdown'
-  " }}}
-
   " Other {{{
-  Bundle 'tpope/vim-cucumber'
   Bundle 'skammer/vim-css-color'
-  Bundle 'kchmck/vim-coffee-script'
   " }}}
 " }}}
 
@@ -42,7 +24,6 @@ call vundle#rc()
 
 " Text objects {{{
   Bundle 'kana/vim-textobj-user'
-  Bundle 'nelstrom/vim-textobj-rubyblock'
   Bundle 'michaeljsmith/vim-indent-object'
   Bundle 'argtextobj.vim'
 " }}}
@@ -50,6 +31,9 @@ call vundle#rc()
 " Utility {{{
 
   Bundle "tpope/vim-surround"
+
+  " Tagbar
+  Bundle "majutsushi/tagbar"
 
   Bundle "kien/rainbow_parentheses.vim"
   autocmd VimEnter * RainbowParenthesesToggle
@@ -107,21 +91,6 @@ call vundle#rc()
   map <Leader>z :ZoomWin<CR>
   imap <Leader>z <Esc>:ZoomWin<CR>
 
-  Bundle 'vimwiki'
-  let g:vimwiki_hl_cb_checked = 1
-  let g:vimwiki_menu          = 'Plugin.Vimwiki'
-  let g:vimwiki_badsyms       = ' '
-  let g:vimwiki_use_mouse     = 1
-  let g:vimwiki_dir_link      = 'index'
-  let g:vimwiki_list          = [
-    \  {
-    \     'path': '~/Dropbox/Wiki/Text',
-    \     'path_html': '~/Dropbox/Wiki/HTML',
-    \     'nested_syntaxes': {
-    \       'ruby': 'ruby'
-    \     }
-    \  }
-    \]
 
   Bundle 'scrooloose/nerdtree'
   let g:NERDTreeIgnore      = ['\.rbc$', '\~$', '.DS_Store$']
@@ -132,11 +101,6 @@ call vundle#rc()
   let g:NERDTreeDirArrows   = 1
   let g:NERDTreeHijackNetrw = 0
   map <Leader>n :NERDTreeToggle<CR>
-
-  Bundle 'Command-T'
-  let g:CommandTMaxFiles  = 20000
-  let g:CommandTMaxHeight = 10
-  set wildignore+=Transmission*Remote*GUI
 
   Bundle 'Indent-Guides'
   let g:indent_guides_auto_colors = 0

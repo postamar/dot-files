@@ -4,13 +4,27 @@ autocmd! BufWritePost .vimrc,vimrc source $MYVIMRC | NERDTreeToggle | NERDTreeTo
 " Auto save files on window blur
 autocmd! FocusLost * :silent! up
 
-" make and python use real tabs
-au! FileType make    set noexpandtab
-au! FileType python  set noexpandtab
-
-au! FileType scss    syntax cluster sassCssAttributes add=@cssColors
-
-" Thorfile, Rakefile and Gemfile are Ruby
-au! BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
+" make use real tabs
+ au! FileType make    set noexpandtab
+" au! FileType python  set noexpandtab
 
 au! BufRead,BufNewFile gitconfig set ft=gitconfig
+
+" NERDTree on startup and focus on the other buffer
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+" Close vim if NERDTree is the only buffer left
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction

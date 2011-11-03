@@ -7,9 +7,6 @@ source ~/.vim/bundles.vim
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
-" This helps with RVM etc
-set shell=zsh
-
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 set tags=tmp/tags;/,./tmp/tags;/,tags;/,./tags;/
