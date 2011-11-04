@@ -5,7 +5,7 @@ autocmd! BufWritePost .vimrc,vimrc source $MYVIMRC | NERDTreeToggle | NERDTreeTo
 autocmd! FocusLost * :silent! up
 
 " make use real tabs
- au! FileType make    set noexpandtab
+au! FileType make    set noexpandtab
 " au! FileType python  set noexpandtab
 
 au! BufRead,BufNewFile gitconfig set ft=gitconfig
@@ -16,7 +16,6 @@ autocmd VimEnter * wincmd p
 
 " Tagbar on startupt
 autocmd VimEnter * TagbarOpen
-
 
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer
@@ -32,3 +31,8 @@ endfunction
 
 " Close vim if NERDTree is the only buffer left
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+" Protobuf detection
+augroup filetype
+  au! BufRead,BufNewFile *.proto setfiletype proto
+augroup end

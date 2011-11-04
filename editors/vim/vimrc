@@ -12,12 +12,13 @@ set tags=tmp/tags;/,./tmp/tags;/,tags;/,./tags;/
 " NERDTree and Tagbar toogle
 nmap <leader>n :call ToggleNERDTreeAndTagbar()<CR>
 
-" Don't close NERDTree when opening a file
-let NERDTreeQuitOnOpen=0
-
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
 " Great colors
 set t_Co=256
+
+" autoload sesion
+let g:session_autoload = "yes"
+let g:session_autosave = "no"
