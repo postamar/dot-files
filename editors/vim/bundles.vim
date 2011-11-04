@@ -117,7 +117,6 @@ call vundle#rc()
   Bundle 'scrooloose/syntastic'
   let g:syntastic_enable_signs  = 1
   let g:syntastic_auto_loc_list = 0
-  let g:syntastic_cpp_compiler_options = ' -I$HOME/src/steerads/src -I$HOME/src/steerads/deps/jsoncpp-lite/include -I$HOME/src/steerads/deps/hiredis'
 " }}}
 
 autocmd BufWritePost bundles.vim source ~/.vim/bundles.vim
