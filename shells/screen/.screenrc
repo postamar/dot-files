@@ -1,5 +1,5 @@
 hardstatus alwayslastline
-hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%c:%s%{-}'
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%D, %d-%m-%Y%{-}'
 encoding UTF-8
 
 # terminfo and termcap for nice 256 color terminal
