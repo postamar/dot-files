@@ -6,10 +6,6 @@ call vundle#rc()
 " Let Vundle manage Vundle
   Bundle 'gmarik/vundle'
 
-" Experimenting
-  Bundle 'robgleeson/hammer.vim'
-  let g:HammerQuiet = 1
-
 " Languages/Syntaxes/Frameworks {{{
   " Other {{{
   Bundle 'skammer/vim-css-color'
@@ -88,12 +84,9 @@ call vundle#rc()
 
   Bundle 'scrooloose/nerdcommenter'
   let NERDSpaceDelims = 1 " space between comment and code
-  map  // <plug>NERDCommenterToggle
-  vmap // <plug>NERDCommenterToggle gv
-  imap // <Esc><plug>NERDCommenterToggle i
-  map  <Leader>/ //
-  vmap <Leader>/ //
-  imap <Leader>/ //
+  map  <Leader>/ <plug>NERDCommenterToggle
+  vmap  <Leader>/ <plug>NERDCommenterToggle gv
+  imap <Leader>/ <Esc><plug>NERDCommenterToggle i
 
   Bundle 'ZoomWin'
   map <Leader>z :ZoomWin<CR>
