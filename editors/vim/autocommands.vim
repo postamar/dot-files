@@ -6,7 +6,6 @@ autocmd! FocusLost * :silent! up
 
 " make use real tabs
 au! FileType make    set noexpandtab
-" au! FileType python  set noexpandtab
 
 au! BufRead,BufNewFile gitconfig set ft=gitconfig
 
