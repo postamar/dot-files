@@ -33,7 +33,16 @@ function! ToggleNERDTreeAndTagbar()
     endfor
 endfunction
 
-"Rename tabs to show tab# and # of viewports
+" Line numbering
+function! g:ToggleNuMode()
+        if(&rnu == 1)
+            set nu
+    else
+        set rnu
+    endif
+endfunc
+
+" Rename tabs to show tab# and # of viewports
 if exists("+showtabline")
   function! MyTabLine()
     let s = ''

@@ -12,6 +12,9 @@ set tags=tmp/tags;/,./tmp/tags;/,tags;/,./tags;/
 " NERDTree and Tagbar toogle
 nmap <leader>n :call ToggleNERDTreeAndTagbar()<CR>
 
+" line numering trick
+nnoremap <leader>l :call g:ToggleNuMode()<cr>
+
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
