@@ -7,6 +7,8 @@ call vundle#rc()
   Bundle 'gmarik/vundle'
 
 " Languages/Syntaxes/Frameworks {{{
+  " Python
+  Bundle 'vim-script/pydoc.vim'
   " Other {{{
   Bundle 'tpope/vim-markdown'
   " }}}
@@ -16,6 +18,7 @@ call vundle#rc()
   Bundle 'tpope/vim-fugitive'
   Bundle 'tpope/vim-git'
 " }}}
+"
 
 " Text objects {{{
   Bundle 'Lokaltog/vim-easymotion'
