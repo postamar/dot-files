@@ -76,3 +76,6 @@
 [submodule "editors/vim/bundle/pydoc.vim"]
 	path = editors/vim/bundle/pydoc.vim
 	url = https://github.com/vim-scripts/pydoc.vim.git
+[submodule "shells/zsh/lib/oh-my-zsh"]
+	path = shells/zsh/lib/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
