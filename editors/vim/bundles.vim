@@ -15,12 +15,10 @@ call vundle#rc()
 " Git {{{
   Bundle 'tpope/vim-fugitive'
   Bundle 'tpope/vim-git'
-  Bundle 'tjennings/git-grep-vim'
 " }}}
 
 " Text objects {{{
   Bundle 'Lokaltog/vim-easymotion'
-  Bundle 'kana/vim-textobj-user'
   Bundle 'michaeljsmith/vim-indent-object'
   Bundle 'argtextobj.vim'
   " Snipmate deps

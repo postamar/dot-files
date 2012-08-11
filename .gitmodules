@@ -61,3 +61,12 @@
 [submodule "editors/vim/bundle/vim-fugitive"]
 	path = editors/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "editors/vim/bundle/vim-git"]
+	path = editors/vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
+[submodule "editors/vim/bundle/vim-indent-object"]
+	path = editors/vim/bundle/vim-indent-object
+	url = https://github.com/vim-scripts/vim-indent-object
+[submodule "editors/vim/bundle/vim-surround"]
+	path = editors/vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
