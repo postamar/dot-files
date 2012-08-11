@@ -2,11 +2,11 @@
 
 * wget
 
-     wget --quiet https://raw.github.com/fsaintjacques/dot-files/master/tools/install.sh -O - | sh
+     `wget --quiet https://raw.github.com/fsaintjacques/dot-files/master/tools/install.sh -O - | sh`
 
 * curl
 
-     curl -L https://raw.github.com/fsaintjacques/dot-files/master/tools/install.sh | sh
+     `curl -L https://raw.github.com/fsaintjacques/dot-files/master/tools/install.sh | sh`
 
 * manual
 
