@@ -22,7 +22,6 @@ call vundle#rc()
 
 " Text objects {{{
   Bundle 'Lokaltog/vim-easymotion'
-  Bundle 'michaeljsmith/vim-indent-object'
   Bundle 'argtextobj.vim'
   " Snipmate deps
   Bundle 'MarcWeber/vim-addon-mw-utils'
