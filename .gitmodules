@@ -52,3 +52,6 @@
 [submodule "editors/vim/bundle/supertab"]
 	path = editors/vim/bundle/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "editors/vim/bundle/nerdcommenter"]
+	path = editors/vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
