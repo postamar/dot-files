@@ -40,3 +40,6 @@
 [submodule "editors/vim/bundle/argtextobj.vim"]
 	path = editors/vim/bundle/argtextobj.vim
 	url = https://github.com/vim-scripts/argtextobj.vim.git
+[submodule "editors/vim/bundle/vim-indent-guides"]
+	path = editors/vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides

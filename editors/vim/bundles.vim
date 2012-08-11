@@ -108,7 +108,7 @@ call vundle#rc()
   let g:NERDTreeHijackNetrw = 0
   let g:NERDTreeWinsize     = 30
 
-  Bundle 'Indent-Guides'
+  Bundle 'nathanaelkane/vim-indent-guides'
   let g:indent_guides_auto_colors = 0
   let g:indent_guides_enable_on_vim_startup = 1
   autocmd VimEnter * IndentGuidesEnable
