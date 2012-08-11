@@ -1,6 +1,6 @@
 [submodule "editors/vim/bundle/vundle"]
 	path = editors/vim/bundle/vundle
-	url = http://github.com/gmarik/vundle.git
+	url = https://github.com/gmarik/vundle/
 [submodule "editors/vim/bundle/rainbow_parentheses.vim"]
 	path = editors/vim/bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim.git
@@ -70,3 +70,9 @@
 [submodule "editors/vim/bundle/vim-surround"]
 	path = editors/vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "editors/vim/bundle/numbers.vim"]
+	path = editors/vim/bundle/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim.git
+[submodule "editors/vim/bundle/pydoc.vim"]
+	path = editors/vim/bundle/pydoc.vim
+	url = https://github.com/vim-scripts/pydoc.vim.git
