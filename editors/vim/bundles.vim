@@ -8,7 +8,7 @@ call vundle#rc()
 
 " Languages/Syntaxes/Frameworks {{{
   " Other {{{
-  Bundle 'skammer/vim-css-color'
+  Bundle 'tpope/vim-markdown'
   " }}}
 " }}}
 
@@ -19,9 +19,15 @@ call vundle#rc()
 " }}}
 
 " Text objects {{{
+  Bundle 'Lokaltog/vim-easymotion'
   Bundle 'kana/vim-textobj-user'
   Bundle 'michaeljsmith/vim-indent-object'
   Bundle 'argtextobj.vim'
+  " Snipmate deps
+  Bundle 'MarcWeber/vim-addon-mw-utils'
+  Bundle 'tomtom/tlib_vim'
+  Bundle 'garbas/vim-snipmate'
+  Bundle 'honza/snipmate-snippets'
 " }}}
 
 " Utility {{{
