@@ -4,17 +4,17 @@ init-submodules:
 	git submodule update --init
 
 install-git:
-	ln -s vcs/git/gitconfig ~/.gitconfig
-	ln -s vcs/git/gitignore ~/.gitignore
+	ln -sf `pwd`/vcs/git/gitconfig ~/.gitconfig
+	ln -sf `pwd`/vcs/git/gitignore ~/.gitignore
 
 install-vim:
-	ln -s editors/vim ~/.vim
-	ln -s editors/vimrc ~/.vimrc
-	ln -s editors/gvimrc ~/.gvimrc
+	ln -sf `pwd`/editors/vim ~/.vim
+	ln -sf `pwd`/editors/vimrc ~/.vimrc
+	ln -sf `pwd`/editors/gvimrc ~/.gvimrc
 
 install-screen:
-	ln -s shells/screen/screenrc ~/.screenrc
+	ln -sf `pwd`/shells/screen/screenrc ~/.screenrc
 
 install-zsh:
-	ln -s shells/zsh/zshrc ~/.zshrc
-	ln -s shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
+	ln -sf `pwd`/shells/zsh/zshrc ~/.zshrc
+	ln -sf `pwd`/shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
