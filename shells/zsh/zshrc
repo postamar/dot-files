@@ -2,8 +2,5 @@ CURRENT_SHELL="zsh"
 SHELL_FILES="${$(readlink $HOME/.zshrc):h}"
 DOT_FILES="${SHELL_FILES:h:h}"
 
-# Comment this out to disable weekly auto-update checks
-DISABLE_AUTO_UPDATE="true"
-
-source $SHELL_FILES/oh-my-zsh.zsh
 source $DOT_FILES/shells/bootstrap.sh
+source $SHELL_FILES/oh-my-zsh.zsh

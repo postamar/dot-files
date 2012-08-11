@@ -3,4 +3,7 @@ ZSH_THEME="robbyrussell"
 
 plugins=(debian git git-flow python ssh-agent)
 
+# Comment this out to disable weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
+
 source $ZSH/oh-my-zsh.sh
