@@ -43,3 +43,12 @@
 [submodule "editors/vim/bundle/vim-indent-guides"]
 	path = editors/vim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "editors/vim/bundle/tabular"]
+	path = editors/vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "editors/vim/bundle/ZoomWin"]
+	path = editors/vim/bundle/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin
+[submodule "editors/vim/bundle/supertab"]
+	path = editors/vim/bundle/supertab
+	url = https://github.com/ervandew/supertab

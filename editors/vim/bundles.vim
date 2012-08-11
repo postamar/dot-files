@@ -43,7 +43,7 @@ call vundle#rc()
   " camelcasemotion
   Bundle "camelcasemotion"
 
-  Bundle "SuperTab"
+  Bundle "ervandew/supertab"
 
   Bundle "kien/rainbow_parentheses.vim"
   autocmd VimEnter * RainbowParenthesesToggle
@@ -52,7 +52,7 @@ call vundle#rc()
   autocmd Syntax * RainbowParenthesesLoadBraces
 
 
-  Bundle 'Tabular'
+  Bundle 'godlygeek/tabular'
   map <Leader>a= :Tabularize /=<CR>
   map <Leader>a> :Tabularize /=><CR>
   map <Leader>a: :Tabularize /\z:<CR>
@@ -95,7 +95,7 @@ call vundle#rc()
   imap <Leader>/ <Esc><plug>NERDCommenterToggle i
   let g:NERDAlignCommentToggle = 1
 
-  Bundle 'ZoomWin'
+  Bundle 'vim-scripts/ZoomWin'
   map <Leader>z :ZoomWin<CR>
   imap <Leader>z <Esc>:ZoomWin<CR>
 
