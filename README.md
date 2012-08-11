@@ -10,6 +10,6 @@
 
 * manual
 
-     git clone https://github.com/fsaintjacques/dot-files.git
-     cd dot-files
-     make
+     `git clone https://github.com/fsaintjacques/dot-files.git`
+     `cd dot-files`
+     `make`
