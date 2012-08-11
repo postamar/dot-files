@@ -9,8 +9,8 @@ install-git:
 
 install-vim:
 	ln -sf `pwd`/editors/vim ~/.vim
-	ln -sf `pwd`/editors/vimrc ~/.vimrc
-	ln -sf `pwd`/editors/gvimrc ~/.gvimrc
+	ln -sf `pwd`/editors/vim/vimrc ~/.vimrc
+	ln -sf `pwd`/editors/vim/gvimrc ~/.gvimrc
 
 install-screen:
 	ln -sf `pwd`/shells/screen/screenrc ~/.screenrc
