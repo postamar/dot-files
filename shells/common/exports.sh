@@ -2,11 +2,7 @@ which vim  &>/dev/null && export EDITOR="$(which vim)  -f"
 which mvim &>/dev/null && export EDITOR="$(which mvim) -f"
 
 export VISUAL="$EDITOR"
-export GEM_OPEN_EDITOR="$EDITOR"
 export GIT_EDITOR="$EDITOR"
-
-export IRBRC="$HOME/.irbrc"
-export RBXOPT="-Xrbc.db=/tmp/rbx"
 
 export TERM=xterm-256color
 export GREP_OPTIONS='--color=auto'
@@ -17,4 +13,3 @@ export HISTSIZE=1000000
 
 export REPORTTIME=2
 export TIMEFMT="%*Es total, %U user, %S system, %P cpu"
-

@@ -1,6 +1,7 @@
 osx || return # Only for OS X
 
 alias o='open .'
+alias top='top -o cpu'
 
 # replacement netstat cmd to find ports used by apps on OS X
 alias netstat="sudo lsof -i -P"
