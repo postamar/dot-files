@@ -87,6 +87,7 @@ call vundle#rc()
   map  <Leader>/ <plug>NERDCommenterToggle
   vmap  <Leader>/ <plug>NERDCommenterToggle gv
   imap <Leader>/ <Esc><plug>NERDCommenterToggle i
+  let g:NERDAlignCommentToggle = 1
 
   Bundle 'ZoomWin'
   map <Leader>z :ZoomWin<CR>
