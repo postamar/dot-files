@@ -1,0 +1,42 @@
+[submodule "editors/vim/bundle/vundle"]
+	path = editors/vim/bundle/vundle
+	url = http://github.com/gmarik/vundle.git
+[submodule "editors/vim/bundle/rainbow_parentheses.vim"]
+	path = editors/vim/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "editors/vim/bundle/camelcasemotion"]
+	path = editors/vim/bundle/camelcasemotion
+	url = https://github.com/vim-scripts/camelcasemotion.git
+[submodule "editors/vim/bundle/snipmate-snippets"]
+	path = editors/vim/bundle/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets.git
+[submodule "editors/vim/bundle/SuperTab"]
+	path = editors/vim/bundle/SuperTab
+	url = https://github.com/vim-scripts/SuperTab.git
+[submodule "editors/vim/bundle/syntastic"]
+	path = editors/vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "editors/vim/bundle/tagbar"]
+	path = editors/vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "editors/vim/bundle/tlib_vim"]
+	path = editors/vim/bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "editors/vim/bundle/vim-addon-mw-utils"]
+	path = editors/vim/bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "editors/vim/bundle/vim-easymotion"]
+	path = editors/vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "editors/vim/bundle/vim-markdown"]
+	path = editors/vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown/
+[submodule "editors/vim/bundle/vim-session"]
+	path = editors/vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
+[submodule "editors/vim/bundle/vim-snipmate"]
+	path = editors/vim/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "editors/vim/bundle/argtextobj.vim"]
+	path = editors/vim/bundle/argtextobj.vim
+	url = https://github.com/vim-scripts/argtextobj.vim.git
