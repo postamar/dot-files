@@ -9,7 +9,7 @@ install-git:
 	ln -sf `pwd`/vcs/git/gitignore ~/.gitignore
 
 install-vim:
-	ln -sfF `pwd`/editors/vim ~/.vim
+	ln -sfh `pwd`/editors/vim ~/.vim
 	ln -sf `pwd`/editors/vim/vimrc ~/.vimrc
 	ln -sf `pwd`/editors/vim/gvimrc ~/.gvimrc
 
@@ -18,7 +18,7 @@ install-screen:
 
 install-zsh:
 	ln -sf `pwd`/shells/zsh/zshrc ~/.zshrc
-	ln -sfF `pwd`/shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
+	ln -sfh `pwd`/shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
 
 install-misc:
 	ln -sf `pwd`/misc/inputrc ~/.inputrc
