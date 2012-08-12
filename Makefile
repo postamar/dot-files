@@ -9,7 +9,7 @@ install-git:
 	ln -sf `pwd`/vcs/git/gitignore ~/.gitignore
 
 install-vim:
-	ln -sf `pwd`/editors/vim ~/.vim
+	ln -sfF `pwd`/editors/vim ~/.vim
 	ln -sf `pwd`/editors/vim/vimrc ~/.vimrc
 	ln -sf `pwd`/editors/vim/gvimrc ~/.gvimrc
 

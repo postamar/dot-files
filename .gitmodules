@@ -3,7 +3,7 @@
 	url = https://github.com/gmarik/vundle/
 [submodule "editors/vim/bundle/rainbow_parentheses.vim"]
 	path = editors/vim/bundle/rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim.git
+	url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "editors/vim/bundle/camelcasemotion"]
 	path = editors/vim/bundle/camelcasemotion
 	url = https://github.com/vim-scripts/camelcasemotion.git
