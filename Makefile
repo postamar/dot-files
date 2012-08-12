@@ -18,7 +18,7 @@ install-screen:
 
 install-zsh:
 	ln -sf `pwd`/shells/zsh/zshrc ~/.zshrc
-	ln -sf `pwd`/shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
+	ln -sfF `pwd`/shells/zsh/lib/oh-my-zsh ~/.oh-my-zsh
 
 install-misc:
 	ln -sf `pwd`/misc/inputrc ~/.inputrc
