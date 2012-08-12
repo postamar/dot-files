@@ -54,19 +54,6 @@ function extract() {
   fi
 }
 
-# Custom "command not found" handling (ala method_missing):
-
-# Zsh
-function command_not_found_handler() {
-  /usr/bin/env ruby $DOT_FILES/misc/method_missing.rb $*
-}
-
-# Bash (call Zsh version)
-function command_not_found_handle() {
-  command_not_found_handler $*
-  return $?
-}
-
 function json() {
   tmpfile=`mktemp -t json`
   curl -s $* | python -mjson.tool > $tmpfile
