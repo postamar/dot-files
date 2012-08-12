@@ -1,5 +1,4 @@
 which vim  &>/dev/null && export EDITOR="$(which vim)  -f"
-which mvim &>/dev/null && export EDITOR="$(which mvim) -f"
 
 export VISUAL="$EDITOR"
 export GIT_EDITOR="$EDITOR"
