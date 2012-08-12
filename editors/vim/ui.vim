@@ -71,6 +71,9 @@ syntax on
   nmap j gj
   nmap k gk
 
+" easier insert quitinfdg
+  imap ;; <ESC>
+
 " Reselect visual block after adjusting indentation
   vnoremap < <gv
   vnoremap > >gv
