@@ -1,5 +1,5 @@
 COMMON_SHELL_FILES="$SHELL_FILES/../common"
-ENV_SHELL_FILES="$SHELL_FILES/../common"
+ENV_SHELL_FILES="$SHELL_FILES/../environments"
 
 # TODO: Remove duplicates from the PATH
 PATH="/usr/local/bin:/usr/local/sbin:/usr/X11/bin:/usr/bin:/usr/sbin:/bin:/sbin:${PATH}"
