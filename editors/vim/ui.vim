@@ -9,6 +9,10 @@ syntax on
   set cursorline
   set background=dark
   colorscheme lucius
+  if (v:version >= 730)
+      set colorcolumn=80
+  endif
+
 
 " Tabs/Whitespace
   set tabstop=4
@@ -73,6 +77,7 @@ syntax on
 
 " easier insert quitinfdg
   imap ;; <ESC>
+  map ;; <ESC>
 
 " Reselect visual block after adjusting indentation
   vnoremap < <gv
