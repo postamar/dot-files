@@ -9,9 +9,8 @@ syntax on
   set cursorline
   set background=dark
   colorscheme lucius
-  if (v:version >= 730)
-      set colorcolumn=80
-  endif
+  set colorcolumn=80
+  set textwidth=78
 
 
 " Tabs/Whitespace
