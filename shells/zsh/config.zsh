@@ -1,7 +1,7 @@
 alias reload="source ~/.zshrc"
 
 # autoload screen
-if [[ $STY = '' ]] then screen -xR; fi
+# if [[ $STY = '' ]] then screen -xR; fi
 
 fpath=($SHELL_FILES/completions $fpath)
 
