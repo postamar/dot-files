@@ -1,4 +1,5 @@
 alias gi='git init'
+alias gdi='git diff'
 alias gst='git status -s'
 alias gl='git pull --rebase'
 alias gp='git push'

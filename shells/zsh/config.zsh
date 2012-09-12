@@ -1,5 +1,8 @@
 alias reload="source ~/.zshrc"
 
+# autoload screen
+# if [[ $STY = '' ]] then screen -xR; fi
+
 fpath=($SHELL_FILES/completions $fpath)
 
 # Option-Left + Option-Right for moving word-by-word in OS X

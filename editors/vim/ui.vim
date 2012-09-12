@@ -9,6 +9,9 @@ syntax on
   set cursorline
   set background=dark
   colorscheme lucius
+  set colorcolumn=80
+  set textwidth=78
+
 
 " Tabs/Whitespace
   set tabstop=4
@@ -49,7 +52,7 @@ syntax on
 
 " Status bar
   set laststatus=2
-  set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+  set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04c%V][%p%%]\ [LEN=%L]
 
 " Folding
   set foldenable " Turn on folding
@@ -73,6 +76,7 @@ syntax on
 
 " easier insert quitinfdg
   imap ;; <ESC>
+  map ;; <ESC>
 
 " Reselect visual block after adjusting indentation
   vnoremap < <gv
