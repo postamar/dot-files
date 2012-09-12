@@ -52,7 +52,7 @@ syntax on
 
 " Status bar
   set laststatus=2
-  set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+  set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04c%V][%p%%]\ [LEN=%L]
 
 " Folding
   set foldenable " Turn on folding

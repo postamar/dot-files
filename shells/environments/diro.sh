@@ -30,3 +30,7 @@ function advertiser_stats() {
 function campaign_stats() {
   for date in `dseq $1 $2`; do echo $date '      '; ddfs cat data:statistics:appnexus:accordant:campaigns:$date ; done
 }
+
+function clean_theano_tmp() {
+    for host in zappa{2..7} eos{4..6}; do echo $host; ssh $host 'rm -rf rm -rf /tmp/compiledir*'; done 2>/dev/null
+}
