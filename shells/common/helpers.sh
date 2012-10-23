@@ -3,7 +3,7 @@ function osx {
 }
 
 function hostmatch() {
-    if [[ `hostname --fqdn` =~ $1 ]]; then
+    if [[ `hostname -f` =~ $1 ]]; then
         return 0
     fi
     return 1
