@@ -23,14 +23,20 @@ export DISCO_HOME="/Tmp/steerads/lib/disco"
 alias ddfs="ddfs -s /Tmp/steerads/etc/disco/settings.py"
 alias disco="disco -s /Tmp/steerads/etc/disco/settings.py"
 
+function retargeting_advertiser_stats() {
+    DATE=$1
+    DIR=/Str/steerads/var/processed/appnexus/accordant
+    TMP=$(mktemp)
+    USERS=${DIR}/users-converted.gz
+
+    collaborative statistic campaign -U $USERS -d $DATE -p accordant > $TMP
+    for i in 3 4 6; do cat $TMP | merge-statistics 4274.167108.5594$i ; done
+
+    # add newly converted users
+    (zcat ${DIR}/order_${DATE}* | cut -f3; zcat $USERS) | sort -u |gzip > ${TMP}
+    mv $TMP $USERS
+}
+
 function advertiser_stats() {
-  for date in `dseq $1 $2`; do echo $date '      '; ddfs cat data:statistics:appnexus:accordant:campaigns:$date | sed -e 's/\.[^\t]*//' | sort | awk '{i[$1] += $2; c[$1] += $3; cv[$1] += $4} END{for(id in i) print id, i[id], c[id], cv[id]}'|sort;  done
-}
-
-function campaign_stats() {
-  for date in `dseq $1 $2`; do echo $date '      '; ddfs cat data:statistics:appnexus:accordant:campaigns:$date ; done
-}
-
-function clean_theano_tmp() {
-    for host in zappa{2..7} eos{4..6}; do echo $host; ssh $host 'rm -rf rm -rf /tmp/compiledir*'; done 2>/dev/null
+  for date in `dseq $1 $2`; do echo -n "$date "; ddfs cat data:statistics:appnexus:accordant:campaigns:$date | merge-statistics $3;  done
 }
