@@ -8,7 +8,7 @@ syntax on
   set linespace=2
   set cursorline
   set background=dark
-  colorscheme lucius
+  colorscheme solarized
   set colorcolumn=80
   set textwidth=78
 
