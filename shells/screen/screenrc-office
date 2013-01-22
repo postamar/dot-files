@@ -1,0 +1,21 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%D, %d-%m-%Y%{-}'
+encoding UTF-8
+
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# erase background with current bg color
+defbce "on"
+
+# MTL delivery
+screen -t h009 0 ssh h009
+screen -t h010 1 ssh h010
+screen -t h011 2 ssh h011
+screen -t h012 3 ssh h012
+screen -t h019 4 ssh h019
+screen -t h020 5 ssh h020
+
+screen -t hadoop 6 ssh h022
