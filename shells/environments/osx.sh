@@ -78,3 +78,6 @@ function maxr() { printf "\e[3;0;0;t\e[8;0;100t"; /usr/bin/clear; return 0; }
 
 # show number of lines & columns
 function lc() { printf "lines: $(/usr/bin/tput lines)\ncolums: $(/usr/bin/tput cols)\n"; return 0; }
+
+# use gnu-find
+alias find=gfind
