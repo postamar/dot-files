@@ -1,5 +1,5 @@
 ZSH="$SHELL_FILES/lib/oh-my-zsh"
-ZSH_THEME="cloud"
+ZSH_THEME="clean"
 
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
