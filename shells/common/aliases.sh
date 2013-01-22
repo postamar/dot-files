@@ -29,3 +29,6 @@ alias colorslist="set | egrep 'COLOR_\w*'"  # lists all the colors
 alias jsonify='python -mjson.tool'
 
 alias sum='paste -sd+ | bc'
+
+alias epoch2date='perl -nle "if (/^\d+$/) {print \"gmtime:    \", scalar gmtime(\$); print \"localtime: \", scalar localtime(\$); } else {print \"ERR\"} "'
+alias date2epoch='perl -MTime::Local -nle "if (/^(\d{4})(\d{2})(\d{2})(\d{2})?(\d{2})?(\d{2})?$/) { print \"timegm:    \", timegm(\$6, \$5, \$4, \$3, \$2-1, \$1-1900); print \"timelocal: \", timelocal(\$6, \$5, \$4, \$3, \$2-1, \$1-1900)} else {print \"ERR\"} "'
