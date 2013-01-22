@@ -11,6 +11,7 @@ syntax on
   colorscheme solarized
   set colorcolumn=80
   set textwidth=78
+  set enc=utf-8
 
 
 " Tabs/Whitespace
