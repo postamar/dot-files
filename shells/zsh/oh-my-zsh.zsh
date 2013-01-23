@@ -3,7 +3,7 @@ ZSH_THEME="clean"
 
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
-plugins=(git git-flow python screen ssh-agent virtualenvwrapper)
+plugins=(git git-flow python screen ssh-agent virtualenvwrapper tmux)
 
 # Comment this out to disable weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"

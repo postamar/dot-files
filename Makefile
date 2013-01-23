@@ -1,5 +1,5 @@
 install: init-submodules install-vim install-git install-screen install-zsh \
-		 install-misc
+		 install-tmux install-misc
 
 init-submodules:
 	git submodule update --init
@@ -15,6 +15,11 @@ install-vim: init-submodules
 
 install-screen:
 	ln -sf `pwd`/shells/screen/screenrc ~/.screenrc
+
+install-tmux:
+	ln -sf `pwd`/shells/tmux/tmux.conf ~/.tmux.conf
+	ln -sf `pwd`/shells/tmux/tmux-powerlinerc ~/.tmux-powerlinerc
+
 
 install-zsh: init-submodules
 	ln -sf `pwd`/shells/zsh/zshrc ~/.zshrc
