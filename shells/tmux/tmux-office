@@ -5,10 +5,6 @@ neww -n h012 "ssh h012"
 neww -n h019 "ssh h019"
 neww -n h020 "ssh h020"
 
-new -s lax-de -n h013 "ssh h013"
-neww -n h014 "ssh h014"
-neww -n h015 "ssh h015"
-
 new -s hadoop -n h022 "ssh h022"
 neww -n h021 "ssh h021"
 neww -n h023 "ssh h023"
