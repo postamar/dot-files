@@ -1,0 +1,8 @@
+new -s local -n vim vim
+neww -n local
+splitw -v -p 50 -t 0 ipython
+neww -n mtl-de "ssh office.bloomdigital.com 'tmux attach mtl-de'"
+neww -n hadoop "ssh office.bloomdigital.com 'tmux attach hadoop'"
+# default to local zsh
+selectw -t 1
+selectp -t 0

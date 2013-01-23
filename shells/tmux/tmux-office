@@ -1,0 +1,17 @@
+new -s mtl-de -n h009 "ssh h009"
+neww -n h010 "ssh h010"
+neww -n h011 "ssh h011"
+neww -n h012 "ssh h012"
+neww -n h019 "ssh h019"
+neww -n h020 "ssh h020"
+
+new -s lax-de -n h013 "ssh h013"
+neww -n h014 "ssh h014"
+neww -n h015 "ssh h015"
+
+new -s hadoop -n h022 "ssh h022"
+neww -n h021 "ssh h021"
+neww -n h023 "ssh h023"
+neww -n h024 "ssh h024"
+neww -n h025 "ssh h025"
+neww -n h026 "ssh h026"
