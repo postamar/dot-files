@@ -1,4 +1,4 @@
-set-option -g window-status-current-format "#[fg=colour235,bg=colour234]⮀#[fg=colour255,bg=colour234,noreverse,bold] #I|#W #[fg=colour234,bg=colour235,nobold]⮀"
+set-option -g window-status-current-format "#[fg=colour255,bg=colour234,noreverse,bold] #I|#W"
 
 new -s mtl-de -n h009 "ssh h009"
 neww -n h010 "ssh h010"
