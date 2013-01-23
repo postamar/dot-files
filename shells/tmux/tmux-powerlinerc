@@ -14,6 +14,8 @@
 	export TMUX_POWERLINE_DIR_USER_THEMES=""
 	# Overlay dirctory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
 	export TMUX_POWERLINE_DIR_USER_SEGMENTS=""
+	TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR=${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR:-'235'}
+
 # }
 
 # battery.sh {
@@ -53,7 +55,7 @@
 # mailcount.sh {
 	# Mailbox type to use. Can be any of {apple_mail, gmail, maildir, mbox}
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MAILBOX_TYPE=""
-	
+
 	## Gmail
 	# Enter your Gmail username here WITH OUT @gmail.com.( OR @domain)
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_USERNAME=""
@@ -68,11 +70,11 @@
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_SERVER="gmail.com"
 	# How often in minutes to check for new mails.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_INTERVAL="5"
-	
+
 	## Maildir
 	# Path to the maildir to check.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MAILDIR_INBOX="/Users/fsaintjacques/.mail/inbox/new"
-	
+
 	## mbox
 	# Path to the mbox to check.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_MBOX_INBOX=""
@@ -87,12 +89,12 @@
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_TRIM_METHOD="trim"
 	# Charcters per second to roll if rolling trim method is used.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_SPEED="2"
-	
+
 	# Hostname for MPD server in the format "[password@]host"
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_HOST="localhost"
 	# Port the MPD server is running on.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_PORT="6600"
-	
+
 	# Username for Last.fm if that music player is used.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_USERNAME=""
 	# How often in seconds to update the data from last.fm.
@@ -116,7 +118,7 @@
 	export TMUX_POWERLINE_SEG_WEATHER_UNIT="c"
 	# How often to update the weather in seconds.
 	export TMUX_POWERLINE_SEG_WEATHER_UPDATE_PERIOD="600"
-	
+
 	# Your location. Find a code that works for you:
 	# 1. Go to Yahoo weather http://weather.yahoo.com/
 	# 2. Find the weather for you location
