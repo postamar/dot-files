@@ -76,3 +76,6 @@
 [submodule "shells/zsh/lib/oh-my-zsh"]
 	path = shells/zsh/lib/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "editors/vim/bundle/powerline"]
+	path = editors/vim/bundle/powerline
+	url = git@github.com:fsaintjacques/powerline.git

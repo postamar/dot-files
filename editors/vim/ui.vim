@@ -11,8 +11,7 @@ syntax on
   colorscheme solarized
   set colorcolumn=80
   set textwidth=78
-  set enc=utf-8
-
+  set encoding=utf-8
 
 " Tabs/Whitespace
   set tabstop=4
@@ -35,6 +34,12 @@ syntax on
   set autoread                  " watch for file changes
   set mouse=a
   set fileformats=unix
+
+" Yank text to the OS X clipboard
+  noremap <leader>y "*y
+  noremap <leader>yy "*Y
+" Preserve indentation while pasting text from the OS X clipboard
+  noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
 " Bells
   set novisualbell  " No blinking

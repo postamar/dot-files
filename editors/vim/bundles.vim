@@ -36,6 +36,7 @@ call vundle#rc()
 
   " Tagbar
   Bundle "majutsushi/tagbar"
+  let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 
   " Extended session
   Bundle "xolox/vim-session"
@@ -44,6 +45,13 @@ call vundle#rc()
   Bundle "camelcasemotion"
 
   Bundle "ervandew/supertab"
+
+  Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+  source ~/src/dot-files/editors/vim/bundle/powerline/powerline/bindings/vim/plugin/source_plugin.vim
+  let g:Powerline_symbols='compatible'
+  let g:Powerline_theme="skwp"
+  let g:Powerline_colorscheme="skwp"
+  set nocompatible
 
   Bundle "kien/rainbow_parentheses.vim"
   autocmd VimEnter * RainbowParenthesesToggle
