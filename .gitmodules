@@ -78,4 +78,4 @@
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "editors/vim/bundle/powerline"]
 	path = editors/vim/bundle/powerline
-	url = git@github.com:fsaintjacques/powerline.git
+	url = https://github.com/fsaintjacques/powerline.git
