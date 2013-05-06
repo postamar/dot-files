@@ -12,11 +12,11 @@ _Warning_ The installation procedure will overwrite the following files or folde
 
 * curl
 
-     `curl -L https://raw.github.com/fsaintjacques/dot-files/master/tools/install.sh | sh`
+     `curl -L https://raw.github.com/postamar/dot-files/master/tools/install.sh | sh`
 
 * manual
 
-     `git clone https://github.com/fsaintjacques/dot-files.git`
+     `git clone https://github.com/postamar/dot-files.git`
 
      `cd dot-files`
 
@@ -32,6 +32,7 @@ Files that contain personnal references (name/email):
 
 # Licence
 
+Copyright (c) 2013      Marius Posta
 Copyright (c) 2011-2013 François Saint-Jacques
 Copyright (c) 2008-2011 Bodaniel Jeanes
 
