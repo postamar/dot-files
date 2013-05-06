@@ -4,3 +4,7 @@ DOT_FILES="${SHELL_FILES:h:h}"
 
 source $DOT_FILES/shells/bootstrap.sh
 source $SHELL_FILES/oh-my-zsh.zsh
+
+export HIVE_HOME=/usr/local/Cellar/hive/0.10.0/libexec
+export JAVA_HOME="$(/usr/libexec/java_home)"
+
