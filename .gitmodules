@@ -7,9 +7,6 @@
 [submodule "editors/vim/bundle/camelcasemotion"]
 	path = editors/vim/bundle/camelcasemotion
 	url = https://github.com/vim-scripts/camelcasemotion.git
-[submodule "editors/vim/bundle/snipmate-snippets"]
-	path = editors/vim/bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets.git
 [submodule "editors/vim/bundle/SuperTab"]
 	path = editors/vim/bundle/SuperTab
 	url = https://github.com/vim-scripts/SuperTab.git
